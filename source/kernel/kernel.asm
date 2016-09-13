@@ -23,6 +23,12 @@ section   .text
 
 _boot:
   cli                      ;clear interrupts
+  mov esp, _stack          ;set esp register to _stack area
   call kernel_main_func    ;call SO C main function defined in kernel.c
   hlt                      ;pause CPU, idle state
 
+section   .bss
+
+  resb    8192 ;8k buffer
+
+_stack:
