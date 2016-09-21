@@ -20,6 +20,7 @@ kernel_main_func()
   video[26] = 0x07;*/
   setIoAddr(_DefaultIoAddr);
 
+  clear();
   print("WELCOME TO VOS MY FIRST SO WRITTEN FOR HOBBY. I AM NOT INTENDING TO BE A NEW LINUS BUT LEARN HOW MACHINE WORKS");
 
 }
